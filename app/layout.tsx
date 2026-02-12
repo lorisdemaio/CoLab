@@ -78,7 +78,7 @@ export default async function layout({ children }: { children: ReactNode }) {
               <Image src={logo} alt="logo" />
             }
             links={[
-              { label: "GitHub", url: "/" },
+              { label: "GitHub", url: "https://github.com/lorisdemaio/CoLab" },
             ]} 
             navButton={{
               label: "Start now",
@@ -110,7 +110,7 @@ export default async function layout({ children }: { children: ReactNode }) {
         <footer>
           <Footer
             links={[
-              { label: "GitHub", url: "/", target: false }
+              { label: "GitHub", url: "https://github.com/lorisdemaio/CoLab", target: true }
             ]} 
           />
         </footer>
