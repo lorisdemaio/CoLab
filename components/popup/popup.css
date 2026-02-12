@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+.popup-container
+{
+    @apply bg-black/50 backdrop-blur-sm h-full w-full fixed
+    inset-0 justify-center items-center z-900;
+}
+
+.popup
+{
+    @apply bg-(--primary) rounded-lg p-4 w-[90%] md:w-1/2 xl:w-3/7 2xl:w-1/3;
+}
+
+.popup-head
+{
+    @apply flex flex-row justify-between items-center py-4;
+}
+
+.popup-title
+{
+    @apply text-white text-2xl;
+}
+
+.popup-button
+{
+    @apply text-white text-lg cursor-pointer;
+}

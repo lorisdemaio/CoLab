@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+@theme
+{
+  --breakpoint-3xl: 120rem;
+}
+
+.settings-container
+{
+    @apply bg-(--primary) p-3 absolute right-0 top-15 
+    rounded-lg z-20 shadow-2xl; 
+}
+
+.custom
+{
+    @apply w-full;
+}
+
+.standard
+{
+    @apply w-3/5 md:w-1/3 xl:w-2/7 2xl:w-1/5;
+}
+
+.settings-head > span
+{
+    @apply text-white font-semibold text-base;
+}
+
+.settings-body
+{
+    @apply pt-3;
+}
+
+.settings-body > ul 
+{
+    @apply flex flex-col gap-2;
+}
+
+.settings-button
+{
+    @apply text-white py-2 px-3 rounded-md w-max 
+    hover:bg-(--secondary)/20 hover:scale-[0.98] 
+    transition-all duration-300 cursor-pointer;
+}
+
+.settings-item
+{
+    @apply text-sm font-normal text-white rounded-md 
+    hover:text-white/80 transition-all duration-300 cursor-pointer;
+}

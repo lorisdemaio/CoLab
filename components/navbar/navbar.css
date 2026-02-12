@@ -1,0 +1,73 @@
+@import 'tailwindcss';
+
+@theme
+{
+  --breakpoint-3xl: 140rem;
+}
+
+.navbar
+{
+    @apply bg-(--background) fixed top-0 w-full flex flex-row items-center 
+    justify-between py-2.5 2xl:py-3.5 px-4 md:px-10 xl:px-20 3xl:px-90
+    border-b border-zinc-800 transition-all duration-300 z-999;
+}
+
+.nav-logo > a > img
+{
+    @apply w-auto size-12 rounded-md;
+}
+
+.nav-text > span
+{
+    @apply text-white font-semibold text-xl 3xl:text-2xl;
+}
+
+.nav-left-content, .nav-right-content
+{
+    @apply flex flex-row items-center;
+}
+
+.nav-left-content
+{
+    @apply gap-2;
+}
+
+.nav-right-content
+{
+    @apply relative justify-end w-[56%] md:w-[46%] xl:w-[26%];
+}
+.link-container
+{
+    @apply bg-(--background) flex flex-row items-center w-max
+    justify-center gap-2 transition-all duration-300;
+}
+
+.link-container > ul
+{
+    @apply flex flex-row items-center 
+    list-none w-max;
+}
+
+.nav-link
+{
+    @apply text-sm 2xl:text-base font-normal text-white py-2 px-4 
+    rounded-md hover:text-gray-300 hover:bg-gray-300/5 transition-all 
+    duration-300 cursor-pointer;
+}
+
+.nav-button
+{
+    @apply bg-(--primary) text-white py-2 px-6 text-sm font-normal w-max
+    rounded-md flex items-center justify-center gap-2 hover:bg-(--primary)/50 
+    hover:scale-[0.98] transition-all duration-300;
+}
+
+.nav-link, .nav-button
+{
+    @apply 2xl:text-base;
+}
+
+.user-container > span
+{
+    @apply text-white text-sm 2xl:text-base flex items-center gap-2;
+}

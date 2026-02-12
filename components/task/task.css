@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+.task-container
+{
+    @apply bg-(--primary) flex flex-col justify-start items-start
+    rounded-b-lg;
+}
+
+.task-container-head
+{
+    @apply w-full py-2 px-4;
+}
+
+.task-container-footer
+{
+    @apply w-full p-4 flex flex-row items-center justify-between mt-auto;
+}
+
+.task-container, .task-container-head
+{
+    @apply rounded-t-lg;
+}
+
+.task-container-head > span
+{
+    @apply text-black font-normal text-lg 2xl:text-xl;
+}
+
+.task-container-body
+{
+    @apply w-full p-4;
+}
+
+.task-title
+{
+    @apply text-white font-bold text-xl 2xl:text-2xl mb-2;
+}
+
+.task-description
+{
+    @apply text-white text-base 2xl:text-lg wrap-break-word;
+}
+
+
+.task-button
+{
+    @apply bg-(--secondary) py-3 px-10 rounded-lg text-base
+    2xl:text-lg cursor-pointer flex items-center gap-2;
+}
+
+.task-button-icon
+{
+    @apply bg-(--secondary) py-3 px-4 rounded-lg text-lg
+    2xl:text-xl cursor-pointer;
+}
+
+.task-button-container
+{
+    @apply flex flex-row gap-4;
+}

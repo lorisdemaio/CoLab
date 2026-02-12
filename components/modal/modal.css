@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@theme
+{
+  --breakpoint-3xl: 140rem;
+}
+
+.modal-container
+{
+    @apply bg-(--background) fixed inset-0 h-full w-full md:w-1/3
+    flex-col px-4 md:px-10 py-10
+    border border-zinc-800 z-200;
+}
+
+.modal-head
+{
+    @apply flex flex-row items-center justify-between mt-10;
+}
+
+.modal-title, .close-icon
+{
+    @apply font-normal text-start text-2xl md:text-3xl 
+    2xl:text-4xl mt-6 md:mt-7;
+}
+
+.modal-title
+{
+    @apply text-white;
+}
+
+.close-icon
+{
+    @apply text-red-500 cursor-pointer;
+}
+
+.modal-body
+{
+    @apply mt-10;
+}
+
+.modal-button
+{
+    @apply text-white py-2 px-3 rounded-md w-max 
+    hover:bg-(--secondary)/20 hover:scale-[0.98] 
+    transition-all duration-300 cursor-pointer;
+}

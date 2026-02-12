@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+.team-card-container
+{
+    @apply bg-(--primary) flex flex-col justify-center items-center 
+    py-10 px-4 gap-10 rounded-lg shadow-2xl;
+}
+
+.team-card-head
+{
+    @apply flex flex-col justify-center items-center gap-1;
+}
+
+.team-card-head > div > h3
+{
+    @apply text-white text-xl 2xl:text-2xl;
+}
+
+.team-card-head > i
+{
+    @apply text-white text-3xl md:text-4xl 2xl:text-5xl;
+}
+
+.team-card-body
+{
+    @apply flex flex-row gap-4;
+}
+
+.team-card-btn
+{
+    @apply bg-(--secondary) py-3 px-4 rounded-lg text-base
+    2xl:text-lg cursor-pointer;
+}

@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+@theme
+{
+  --breakpoint-3xl: 120rem;
+}
+
+:root 
+{
+  --background: #080808;
+  --primary: #4F46E5;
+  --secondary: #2DD4BF;
+  --accent: #A78BFA;
+}
+
+/* SROLLBAR */
+
+::-webkit-scrollbar 
+{
+  width: 5px;
+}
+
+::-webkit-scrollbar-track 
+{
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb 
+{
+  background: var(--accent);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+  background: var(--secondary);
+}
+
+/* END SCROLLBAR */
+
+*
+{
+  @apply p-0 m-0 box-border;
+}
+
+body
+{
+  @apply bg-(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html
+{
+  @apply overflow-x-hidden;
+}
+
+/* MAIN */
+
+.title
+{
+  @apply text-white font-bold text-3xl md:text-4xl 
+  2xl:text-5xl;
+}
+
+.subtitle
+{
+  @apply text-gray-300 font-normal text-start text-xl md:text-2xl 
+  2xl:text-3xl mt-6 md:mt-7;
+}
+
+.description
+{
+  @apply text-white font-normal text-base md:text-lg xl:text-xl 2xl:text-2xl
+  wrap-break-word;
+}
+
+.hero-title
+{
+  @apply text-white font-bold text-center text-5xl 
+  md:text-6xl md:w-3/4 xl:w-3/4 2xl:w-[65%] 2xl:text-7xl 3xl:text-8xl 
+  3xl:w-[70%];
+}
+
+.hero-subtitle
+{
+  @apply text-gray-300 font-normal text-center text-lg md:text-xl 
+  xl:text-2xl 2xl:text-3xl 3xl:text-4xl mt-6 md:mt-7;
+}
+
+.hero-button-container
+{
+  @apply flex flex-col md:flex-row justify-center items-center gap-4 
+  w-full mt-10 md:mt-12;
+}
+
+.hero-primary-button, .hero-secondary-button
+{
+  @apply py-3 px-10 rounded-lg text-center text-base 2xl:text-lg
+  w-full md:w-max transition-all duration-300 hover:scale-[0.97] 
+  cursor-pointer;
+}
+
+.hero-primary-button
+{
+  @apply bg-(--primary) text-white;
+}
+
+.hero-secondary-button
+{
+  @apply border-2 border-(--secondary) text-white;
+}
+
+.accent-1
+{
+  @apply text-(--accent);
+}
+
+.accent-2
+{
+  @apply text-(--secondary);
+}
+
+.grid-layout-4
+{
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
+  xl:grid-cols-4 gap-4 w-full;
+}
+
+.grid-layout-3
+{
+  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
+  gap-4 mt-4 w-full;
+}
+
+.button-container
+{
+  @apply flex flex-row items-center gap-4 w-full;
+}
+
+.link
+{
+  @apply text-(--accent) text-lg md:text-base 2xl:text-lg 
+  cursor-pointer flex flex-row items-center gap-1;
+}
+
+.absolute-btn
+{
+  @apply fixed bottom-5 right-5 bg-(--secondary) py-3 px-4 
+  rounded-lg cursor-pointer z-100;
+}
+
+.profile-pic
+{
+  @apply p-4 rounded-full bg-(--primary) text-black size-30
+  flex justify-center items-center;
+}
+
+.profile-pic > i 
+{
+  @apply text-4xl;
+}
+
+.team-member
+{
+  @apply flex flex-row items-center gap-3 p-2;
+}
+
+.member 
+{
+  @apply text-white font-normal text-start text-base md:text-lg;
+}
+
+.badge
+{
+  @apply text-white bg-red-500 text-xs font-normal p-1 rounded-lg;
+}
+
+.hero-img
+{
+  filter: drop-shadow(0 0 1rem var(--secondary));
+}
+
+/* END MAIN */

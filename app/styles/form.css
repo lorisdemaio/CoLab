@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+.auth-container
+{
+    @apply py-10 px-4 xl:px-10 2xl:py-20
+    rounded-lg w-full lg:w-3/4 lg:px-7 xl:w-1/2;
+}
+
+.auth-container > form
+{
+    @apply w-full flex flex-col justify-start items-start 
+    gap-4;
+}
+
+.form-row
+{
+    @apply flex flex-col md:flex-row gap-4;
+}
+
+.form-col
+{
+    @apply flex flex-col gap-2;
+}
+
+.form-col, .form-row
+{
+    @apply w-full;
+}
+
+.form-col > label
+{
+    @apply text-white text-lg 2xl:text-xl;
+}
+
+.form-col > input, .form-col > textarea, .form-col > select
+{
+    @apply bg-white text-base rounded-md py-1.5 px-4;
+}
+
+.form-col > textarea
+{
+    @apply h-20;
+}
+
+.info-box
+{
+    @apply mt-2;
+}
+
+.info-box > p
+{
+    @apply text-white text-sm wrap-break-word;
+}
+
+.info-box > p > a
+{
+    @apply text-(--secondary) underline cursor-pointer;
+}
+
+.form-button
+{
+    @apply bg-(--secondary) py-3 px-10 rounded-md text-base
+    font-semibold 2xl:text-lg cursor-pointer mt-4 w-full xl:w-max;
+}

@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@theme
+{
+  --breakpoint-3xl: 140rem;
+}
+
+section
+{
+    @apply relative z-10;
+}
+
+.section-fit, .section-full
+{
+    @apply w-full;
+}
+
+.section-full
+{
+    @apply min-h-dvh;
+}
+
+.section-fit
+{
+    @apply min-h-max;
+}
+
+.section-container
+{
+    @apply relative left-0 flex flex-col px-4 md:px-10 xl:px-20
+    3xl:px-90 py-20 w-full z-10;
+}

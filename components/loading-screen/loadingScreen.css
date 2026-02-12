@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+.loading-container
+{
+    @apply bg-(--background) fixed inset-0 flex justify-center 
+    items-center z-9999;
+}
+
+.loading-image > img 
+{
+    @apply h-20 w-26 animate-pulse;
+}
